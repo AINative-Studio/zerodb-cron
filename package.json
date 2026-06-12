@@ -1,0 +1,55 @@
+{
+  "name": "zerodb-cron",
+  "version": "1.0.0",
+  "description": "Cron scheduler + DB event triggers backed by ZeroDB. Drop-in node-cron replacement with database-aware event hooks.",
+  "main": "index.cjs",
+  "module": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.cjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/cron.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "cron",
+    "node-cron",
+    "cron-alternative",
+    "scheduler",
+    "job-scheduler",
+    "task-scheduler",
+    "database-triggers",
+    "event-triggers",
+    "zerodb",
+    "ainative",
+    "serverless",
+    "auto-provisioning",
+    "migration",
+    "node-cron-to-zerodb",
+    "cron-jobs",
+    "scheduled-tasks"
+  ],
+  "author": "AINative Studio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AINative-Studio/zerodb-cron.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AINative-Studio/zerodb-cron/issues"
+  },
+  "homepage": "https://zerodb.ai",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
